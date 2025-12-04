@@ -1,0 +1,53 @@
+{
+  "name": "@exponotify/sdk",
+  "version": "1.2.2",
+  "description": "Push notifications for Expo apps - register devices, track opens, manage users",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "expo",
+    "push-notifications",
+    "react-native",
+    "notifications",
+    "exponotify",
+    "push",
+    "fcm",
+    "apns"
+  ],
+  "author": "Exponotify",
+  "license": "MIT",
+  "peerDependencies": {
+    "expo-device": ">=5.0.0",
+    "expo-notifications": ">=0.20.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "peerDependenciesMeta": {
+    "expo-localization": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.27",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exponotify/sdk"
+  },
+  "homepage": "https://exponotify.com",
+  "bugs": {
+    "url": "https://github.com/exponotify/sdk/issues"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
